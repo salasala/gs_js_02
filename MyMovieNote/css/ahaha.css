@@ -1,0 +1,125 @@
+p.gugu{
+position: relative;
+    top: -10px;
+    left: 500px;
+font-family: arial black;
+font-size: 50px;
+color: white;
+}
+.notebook{
+    width: 150px;
+    height: auto;
+}
+header{
+    background-color: black;
+}
+#feeling{
+    position: relative;
+    top: -140px;
+    left: 130px;
+    width: 250px;
+    height: 150px;
+    font-size: 80%;
+
+}
+.eigamei{
+    position: relative;
+    left: 470px;
+    top: -10px;
+}
+.laland{
+    position: relative;
+    left: 280px;
+    top: -60px;
+    font-family: serif;
+}
+.kansou{
+    position: relative;
+    left: 800px;
+    top: -80px;
+}
+
+ul {
+    padding: 0;
+    display: table; /* 定義 */
+    table-layout: fixed;
+    width: 80px;
+    font-size: 25px;
+    margin: 0 3%;
+    text-align: center;
+  }
+  li {
+    list-style-type: none;
+    background-color:white;
+    cursor: pointer;
+    color: black;
+  }
+#save{
+    position: relative;
+    left: 980px;
+    top: -250px;
+}
+#clear{
+    position: relative;
+    left: 980px;
+    top: -230px;
+}
+  li:hover {
+    background: black;
+    color:white;
+  }
+  #memo{
+      position: relative;
+      top: -140px;
+      left: 200px;
+     width: 250px;
+     height: 150px;
+  }
+  .other{
+      position: relative;
+      top: -160px;
+      left: 1220px;
+  }
+  #moviename{
+      position: relative;
+      top: -140px;
+      left: 1150px;
+      width: 250px;
+      height: 150px;
+  }
+.lalaland2{
+    width: 150px;
+    height: auto;
+}
+.thefault{
+    width: 150px;
+    height: auto;
+}
+.nottinghill{
+    width: 150px;
+    height: auto;
+}
+.titanic{
+    width: 150px;
+    height: auto;
+}
+.gokome{
+    position: relative;
+    top: 20px;
+}
+.princess{
+    width: 150px;
+    height: auto;
+}
+.rokkome{
+    position: relative;
+    top: 60px;
+}
+.loverosie{
+    width: 150px;
+    height: auto;
+}
+.nanakome{
+    position: relative;
+    top: 60px;
+}

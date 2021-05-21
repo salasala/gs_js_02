@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Note</title>
+    <link rel="stylesheet" href="css/ahaha.css">
+    <script src="javascript/jquery-2.1.3.min.js"></script>
+
+</head>
+<body>
+   
+<header>
+    <p class="gugu">My Movie Note</p>
+    
+</header>
+<main>
+    <div style="position: absolute;left: 170px;top: 200px;">
+    <img src="img/IMG_9274.jpg" art="ララランド" title="lalaland" class="notebook">
+</div>
+<main>
+ 
+    <div class="kotei">
+    <h1 class="eigamei">映画名</h1>
+  <h1 class="kansou">感想</h1>
+  <h1 class="other">その他</h1>
+  <textarea id="moviename"></textarea>
+  <textarea id="feeling"></textarea>
+  <textarea id="memo"></textarea>
+  
+  <ul>
+    <li id="save">SAVE</li>
+    <li id="clear">CLEAR</li>
+  </ul>
+</div>
+<div style="position: absolute;left: 170px;top: 450px;" >
+<img src="img/IMG_9275.JPG" art="君に読む物語" title="thenotebook" class="lalaland2">
+</div>
+
+<div class="nikome">
+<textarea id="moviename"></textarea>
+<textarea id="feeling"></textarea>
+<textarea id="memo"></textarea>
+
+<ul>
+    <li id="save">SAVE</li>
+    <li id="clear">CLEAR</li>
+  </ul>
+</div>
+
+<div style="position: absolute;left: 170px;top: 700px;">
+<img src="img/IMG_9276.JPG" art="きっと星のせいじゃない" title="thefaultinourstars" class="thefault" >
+</div>
+<div class="sankome">
+    <textarea id="moviename"></textarea>
+    <textarea id="feeling"></textarea>
+    <textarea id="memo"></textarea>
+    <ul>
+        <li id="save">SAVE</li>
+        <li id="clear">CLEAR</li>
+      </ul>
+</div>
+
+<div style="position: absolute;left: 170px;top: 940px;">
+    <img src="img/IMG_9277.JPG" art="ノッティングヒル" title="nottinghill" class="nottinghill">
+</div>
+<div class="yonkome">
+    <textarea id="moviename"></textarea>
+    <textarea id="feeling"></textarea>
+    <textarea id="memo"></textarea>
+    <ul>
+        <li id="save">SAVE</li>
+        <li id="clear">CLEAR</li>
+      </ul>
+</div>
+
+<div style="position: absolute;left: 170px;top: 1180px;">
+    <img src="img/IMG_9286.JPG" art="タイタニック" title="titanic" class="titanic">
+</div>
+<div class="gokome">
+    <textarea id="moviename"></textarea>
+    <textarea id="feeling"></textarea>
+    <textarea id="memo"></textarea>
+    <ul>
+        <li id="save">SAVE</li>
+        <li id="clear">CLEAR</li>
+      </ul>
+</div>
+<div style="position: absolute;left: 170px;top: 1450px;">
+    <img src="img/IMG_9287.JPG" art="プリティプリンセス" title="princess" class="princess">
+</div>
+<div class="rokkome">
+    <textarea id="moviename"></textarea>
+    <textarea id="feeling"></textarea>
+    <textarea id="memo"></textarea>
+    <ul>
+        <li id="save">SAVE</li>
+        <li id="clear">CLEAR</li>
+      </ul>
+</div>
+<div style="position: absolute;left: 170px;top: 1690px;">
+    <img src="img/IMG_9288.JPG" art="あと一センチの恋" title="loverosie" class="loverosie">
+</div>
+<div class="nanakome">
+    <textarea id="moviename"></textarea>
+    <textarea id="feeling"></textarea>
+    <textarea id="memo"></textarea>
+    <ul>
+        <li id="save">SAVE</li>
+        <li id="clear">CLEAR</li>
+      </ul>
+</div>
+</main>
+
+
+
+<script>
+$("#save").on("click",function(){
+    const key = $("#feeling").val();
+    const value = $("#memo").val();
+    localStorage.setItem(key,value);
+    const html ='<tr><th>'+key+'</th></td>'+value+'</td></tr>';
+});
+
+$("#clear").on("click", function(){
+    localStorage.clear();
+    $("#feeling").unwrap();
+    $("#feeling").empty();
+});
+
+</script>
+</body>
+</html>
